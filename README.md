@@ -2,7 +2,7 @@
 
 [Reelspan](https://reelspan.com) tools for the [Vercel AI SDK](https://ai-sdk.dev). Let a model publish videos,
 photos, text and PDFs to TikTok, YouTube, Instagram, Facebook, X, Threads, LinkedIn, Pinterest, Bluesky, Reddit and
-12 more networks, check how each went, retry failures, manage the schedule and read analytics.
+more, check how each went, retry failures, manage the schedule and read analytics.
 
 ```bash
 npm install @reelspan/ai-sdk ai zod

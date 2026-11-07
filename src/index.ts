@@ -1,4 +1,4 @@
-// Reelspan tools for the Vercel AI SDK: let a model publish to 22 social networks, check results, read analytics and
+// Reelspan tools for the Vercel AI SDK: let a model publish to every major social network, check results, read analytics and
 // manage the schedule. Built on the official `reelspan` client (retries, idempotency keys, big uploads in parts).
 import { tool, type Tool } from 'ai';
 import { z } from 'zod';
