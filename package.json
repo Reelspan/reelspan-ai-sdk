@@ -1,0 +1,73 @@
+{
+  "name": "@reelspan/ai-sdk",
+  "version": "0.1.0",
+  "description": "Reelspan tools for the Vercel AI SDK: let a model publish videos, photos and text to TikTok, YouTube, Instagram, X, LinkedIn and 17 more networks, check results and read analytics.",
+  "license": "MIT",
+  "author": "Anjum Labs <support@reelspan.com>",
+  "homepage": "https://reelspan.com/docs/ai-sdk",
+  "bugs": {
+    "url": "https://github.com/Reelspan/reelspan-ai-sdk/issues",
+    "email": "support@reelspan.com"
+  },
+  "type": "module",
+  "engines": {
+    "node": ">=20"
+  },
+  "sideEffects": false,
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js",
+      "require": "./dist/index.cjs"
+    },
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "dist",
+    "README.md",
+    "CHANGELOG.md",
+    "LICENSE"
+  ],
+  "keywords": [
+    "reelspan",
+    "ai",
+    "ai-sdk",
+    "vercel",
+    "tools",
+    "agents",
+    "social media",
+    "publishing",
+    "tiktok",
+    "youtube",
+    "instagram",
+    "upload-post"
+  ],
+  "scripts": {
+    "build": "tsc -p tsconfig.json && esbuild src/index.ts --bundle --platform=neutral --format=esm --target=es2022 --external:ai --external:zod --outfile=dist/index.js && esbuild src/index.ts --bundle --platform=node --format=cjs --target=node20 --external:ai --external:zod --outfile=dist/index.cjs",
+    "test": "npm run build && node --test test/tools.test.mjs",
+    "prepublishOnly": "npm test"
+  },
+  "peerDependencies": {
+    "ai": "^5 || ^6 || ^7",
+    "zod": "^3.25.0 || ^4"
+  },
+  "devDependencies": {
+    "@types/node": "^20.19.43",
+    "ai": "^7.0.164",
+    "esbuild": "^0.25.12",
+    "reelspan": "github:Reelspan/reelspan-node#cc5ceabe0aa3dd633b546f6a0a2132c4efded09f",
+    "typescript": "^5.9.3",
+    "zod": "^4.6.7"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Reelspan/reelspan-ai-sdk.git"
+  },
+  "publishConfig": {
+    "access": "public",
+    "provenance": true
+  }
+}
