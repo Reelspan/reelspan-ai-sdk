@@ -1,6 +1,6 @@
 {
   "name": "@reelspan/ai-sdk",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Reelspan tools for the Vercel AI SDK: let a model publish videos, photos and text to TikTok, YouTube, Instagram, X, LinkedIn and more, check results and read analytics.",
   "license": "MIT",
   "author": "Anjum Labs <support@reelspan.com>",

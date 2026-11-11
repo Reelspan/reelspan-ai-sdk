@@ -4,7 +4,7 @@ import { tool, type Tool } from 'ai';
 import { z } from 'zod';
 import { Reelspan } from 'reelspan';
 
-export const VERSION = '0.1.0';
+export const VERSION = '0.1.1';
 
 export const PLATFORMS = ['tiktok', 'youtube', 'instagram', 'facebook', 'x', 'threads', 'linkedin', 'pinterest', 'bluesky', 'reddit', 'google_business', 'telegram', 'discord', 'slack', 'mastodon', 'devto', 'hashnode', 'wordpress', 'sandbox'] as const;
 
