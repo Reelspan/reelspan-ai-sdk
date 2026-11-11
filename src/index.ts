@@ -6,7 +6,7 @@ import { Reelspan } from 'reelspan';
 
 export const VERSION = '0.1.0';
 
-export const PLATFORMS = ['tiktok', 'youtube', 'instagram', 'facebook', 'x', 'threads', 'linkedin', 'pinterest', 'bluesky', 'reddit', 'google_business', 'telegram', 'discord', 'slack', 'mastodon', 'lemmy', 'devto', 'hashnode', 'wordpress', 'sandbox'] as const;
+export const PLATFORMS = ['tiktok', 'youtube', 'instagram', 'facebook', 'x', 'threads', 'linkedin', 'pinterest', 'bluesky', 'reddit', 'google_business', 'telegram', 'discord', 'slack', 'mastodon', 'devto', 'hashnode', 'wordpress', 'sandbox'] as const;
 
 /** Tools that publish, change or delete something. */
 export const WRITE_TOOLS = ['uploadVideo', 'uploadPhotos', 'uploadText', 'uploadDocument', 'retryPost', 'editScheduledPost', 'cancelScheduledPost', 'writeCaptions'] as const;
